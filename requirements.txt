@@ -1,0 +1,31 @@
+# ── Core trading infrastructure ────────────────────────────────────────────────
+alpaca-py>=0.13.0             # Alpaca REST + WebSocket SDK (data + trading)
+
+# ── Dashboard ──────────────────────────────────────────────────────────────────
+streamlit>=1.32.0             # Web dashboard framework
+plotly>=5.20.0                # Interactive charts
+watchdog>=4.0.0               # Streamlit file watcher (speeds up dev reloads)
+
+# ── Data / numerics ───────────────────────────────────────────────────────────
+pandas>=2.2.0                 # DataFrames
+numpy>=1.26.0                 # Numerical computing
+pyarrow>=15.0.0               # Parquet read/write (required by cache layer)
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+pydantic>=2.6.0               # Data models + validation
+pydantic-settings>=2.2.0      # Settings loaded from .env
+python-dotenv>=1.0.0          # .env file loading
+
+# ── Machine learning (signal generator — future use) ──────────────────────────
+scikit-learn>=1.4.0           # Classical ML models, preprocessing
+# torch>=2.2.0                # Uncomment when implementing LSTM signals
+# statsmodels>=0.14.0         # Uncomment when implementing ARIMA signals
+# openai>=1.14.0              # Uncomment when implementing LLM sentiment signals
+
+# ── Portfolio optimisation (future use) ───────────────────────────────────────
+scipy>=1.12.0                 # Optimisation routines (mean-variance, etc.)
+# cvxpy>=1.4.0                # Uncomment for convex portfolio optimisation
+
+# ── Testing ────────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
